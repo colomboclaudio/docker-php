@@ -15,8 +15,6 @@ COPY repos.list /etc/apt/sources.list.d/php56.list
 #install package
 RUN apt-get update && apt-get install -y nano software-properties-common
 RUN apt-get install -y apache2 php5.6 php5.6-mysql php5.6-mysql php5.6-xml php5.6-zip php5.6-curl
-RUN apt-get install -y python python-pip
-RUN pip install openpyxl
 
 #start service apache2
 ENV APACHE_RUN_USER www-data
