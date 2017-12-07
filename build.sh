@@ -1,1 +1,1 @@
-docker build -t pdasrl:php-7 .
+docker build -t pdasrl:php-5.6 .

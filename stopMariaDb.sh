@@ -1,1 +1,1 @@
-docker stop php7mariadb
+docker stop php56mariadb

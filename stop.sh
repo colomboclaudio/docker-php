@@ -1,1 +1,1 @@
-docker stop php7
+docker stop php56

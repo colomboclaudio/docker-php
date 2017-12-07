@@ -1,1 +1,1 @@
-docker stop php7mysql
+docker stop php56mysql

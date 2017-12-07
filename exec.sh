@@ -1,1 +1,1 @@
-docker exec -ti php7 bash
+docker exec -ti php56mysql bash
