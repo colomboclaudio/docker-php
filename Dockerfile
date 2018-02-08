@@ -1,8 +1,8 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
 
 #Set Proxy
-#ENV http_proxy http://XXX:XXXX
-#ENV https_proxy http://XXX:XXXX
+#ENV http_proxy http://192.168.8.8:3128
+#ENV https_proxy http://192.168.8.8:3128
 
 #Copia chiave ppa e aggiunta
 #ppa.key ricavata da: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x4F4EA0AAE5267A6C
@@ -15,6 +15,7 @@ COPY repos.list /etc/apt/sources.list.d/php56.list
 #install package
 RUN apt-get update && apt-get install -y nano software-properties-common
 RUN apt-get install -y apache2 php5.6 php5.6-mysql php5.6-mysql php5.6-xml php5.6-zip php5.6-curl
+
 
 #start service apache2
 ENV APACHE_RUN_USER www-data
